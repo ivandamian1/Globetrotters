@@ -1,10 +1,10 @@
 import '../styles/Home.css';
 
-import country1 from '../assets/images/employees.png';
-import country2 from '../assets/images/weather.webp';
-import country3 from '../assets/images/vehicle.jpg';
-import country4 from '../assets/images/readme.png';
-import country5 from '../assets/images/pets.jpeg';
+import country1 from '../assets/images/uk-flag.gif';
+import country2 from '../assets/images/fr-flag.gif';
+import country3 from '../assets/images/gm-flag.gif';
+import country4 from '../assets/images/pl-flag.gif';
+import country5 from '../assets/images/sp-flag.gif';
 
 
 //function to create the About Me section

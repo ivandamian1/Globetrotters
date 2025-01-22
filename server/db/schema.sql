@@ -2,4 +2,4 @@
 DROP DATABASE IF EXISTS globetrotters_db;
 
 -- CREATE DATABASE
-CREATE DATABASE globetrotters_db_db;
+CREATE DATABASE globetrotters_db;

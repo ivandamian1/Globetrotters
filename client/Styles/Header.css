@@ -1,0 +1,64 @@
+/* Ensure Abril Fatface font is imported */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root {
+  --background: #8ECAE6;
+  --dark: #023047;
+  --mid: #219EBC;
+  --light: #FB8500;
+  --lightest: #FFB703;
+}
+
+
+.header {
+  display: flex;             /* Makes layout flexible */
+  align-items: center;       /* Align vertically */
+  justify-content: center; /* Align content to the left */
+  width: 100vw;             /* Full width */  
+  padding: 0px 0px;     /* Padding around the header */
+  margin: 0;                  /* Remove default margin */
+  box-sizing: border-box;  
+  background-color: var(--light); /* Background color */
+  color: var(--lightest);            /* Text color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure header is on top of other elements */
+  height: 80px; /* Set height of header */
+}
+
+/* h1 styling */
+.header h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 4rem;          /* Font size */
+  margin: 20px;                  /* Remove default margin */
+  color: var(--lightest);             /* Text color */
+}
+
+/* mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (max-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .header {
+    height: 60px;                  /* Shrink header height */
+    justify-content: center;       /* Center header horizontally */
+    align-items: center;           /* Center vertically */  
+    display: flex;             /* Makes layout flexible */
+    align-items: center;       /* Align vertically */
+    width: 100vw;             /* Full width */  
+    padding: 0px 0px;     /* Padding around the header */
+    margin: 0;                  /* Remove default margin */
+    box-sizing: border-box;  
+    background-color: var(--light); /* Background color */
+    color: var(--lightest);            /* Text color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header is on top of other elements */
+    height: 80px; /* Set height of header */
+  }
+
+  .header h1 {
+    font-size: 3rem;               /* Smaller font size for h1 */
+    margin: 0;                     /* Remove margin */
+  }
+}

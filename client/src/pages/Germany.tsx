@@ -3,6 +3,7 @@ import '../styles/Country.css';
 //Import images
 import GEntertainment from '../assets/images/GermanyEntertainment.webp';
 import GFood from '../assets/images/GermanyGermanyFood.png';
+import train from '../assets/images/gm-train.jpeg';
 
 //function to create the About Me section
 function GermanyPage() {
@@ -50,6 +51,29 @@ function GermanyPage() {
           <p>
           <a href="https://www.lonelyplanet.com/articles/what-to-eat-and-drink-in-germany" target="_blank" rel="noopener noreferrer">
             16 must-try foods and drinks in Germany – and the best places to enjoy them    
+          </a>
+          </p>
+        </div>
+      </div>
+
+      {/* Info and activities link */}
+      <div className="country-container">
+      {/* Add an image of country */}
+        <img 
+          src={train}
+          alt="German train"
+          className="country-image"
+        />
+        <div className="country-text">
+          {/* Section title */}
+          <h1>Train Schedule</h1>
+          {/* Info and link to activities article */}
+          <p>
+            Boasting the largest rail network in Europe, Germany is a great place to travel by train! Check out the schedule here!
+          </p>
+          <p>
+          <a href="https://www.lonelyplanet.com/articles/what-to-eat-and-drink-in-germany" target="_blank" rel="noopener noreferrer">
+            Get the train schedule by API   
           </a>
           </p>
         </div>
